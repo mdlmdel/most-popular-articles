@@ -2,7 +2,7 @@ $(document).ready(function () {
   // Submit event handler
   $('#search-form').submit( function(e) {
     e.preventDefault();
-    getMostPopular();
+    getMostPopular(results);
   })
 
   // Get lists of most popular articles from the New York Times Magazine section 
@@ -18,6 +18,10 @@ $(document).ready(function () {
       method: 'GET',
     }).done(function(result) {
       console.log(result);
+      var article_url = results.url;
+      var title = results.title;
+      $('#results').append("<li><h3>" + title + 
+        "</h3>" + article_url + "</li>");
     }).fail(function(err) {
       throw err;
     });
