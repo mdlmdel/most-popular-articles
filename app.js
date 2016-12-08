@@ -18,6 +18,7 @@ $(document).ready(function () {
       method: 'GET',
     }).done(function(result) {
       console.log(result);
+      // Define which results will be displayed and display them
       var article_url = results.url;
       var title = results.title;
       $('#results').append("<li><h3>" + title + 
