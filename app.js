@@ -16,11 +16,11 @@ $(document).ready(function () {
     $.ajax({
       url: url, 
       method: 'GET',
-    }).done(function(result) {
-      console.log(result);
+    }).done(function(data) {
+      console.log(data);
       // Define which results will be displayed and display them
-      var article_url = results.url;
-      var title = results.title;
+      var article_url = data.results[0].url;
+      var title = data.results[0].title;
       $('#results').append("<li><h3>" + title + 
         "</h3>" + article_url + "</li>");
     }).fail(function(err) {
