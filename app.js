@@ -15,6 +15,7 @@ $(document).ready(function () {
     url += '?' + $.param(params)
     $.ajax({
       url: url, 
+      title: results.title, 
       method: 'GET',
     }).done(function(result) {
       console.log(result);
