@@ -9,7 +9,7 @@ $(document).ready(function () {
   // Hide the top stories button when the page loads
   $('#summary').hide();
 
-  // Get lists of the most emailed articles within the last 30 days from the New York Times Magazine section
+  // Get a list of the most emailed articles within the last 30 days from the New York Times Magazine section
   function getMostPopular() {
     var url = 'https://api.nytimes.com/svc/mostpopular/v2/mostemailed/Magazine/30.json';
     let params = {
