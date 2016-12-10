@@ -26,7 +26,7 @@ $(document).ready(function () {
       // Define which results will be displayed and display them
       for (var i = 0; i < 5; i++) {
         var title = data.results[i].title;
-        $('#read').show();
+        $('#summary').show();
         var article_url = data.results[i].url;
         var abstract = data.results[i].abstract;
 
