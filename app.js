@@ -37,9 +37,9 @@ $(document).ready(function () {
         // Display results in HTML
         $('#results').append("<li><h3>" + title + 
           "</h3>" + abstract + "<br><br>" + "<a target='blank' href='" + article_url + "'>" + 
-          "<img src='" + image + "'>" + "'</a></li>");
+          "<img src='" + image + "'>" + "</a></li>");
         $('#summary').append("<a target='blank' href='" + article_url + "'>" + 
-          "<img src='" + image + "'>" + "'</a>");
+          "<img src='" + image + "'>" + "</a>");
       } 
     }).fail(function(err) {
       throw err;
