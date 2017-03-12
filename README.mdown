@@ -2,4 +2,6 @@
 
 This is a New York Times search app I designed and built using the New York Times API, AJAX, jQuery, JavaScript, HTML, and CSS. The app allows users to search for the New York Times articles most shared via email within the last 30 days and displays the top 5 results. 
 
+View and use the app [here] (https://mdlmdel.github.io/most-popular-articles/). 
+
 -MdL
